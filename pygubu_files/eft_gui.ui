@@ -1,0 +1,1473 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="main" named="True">
+    <property name="geometry">1280x720</property>
+    <property name="height">540</property>
+    <property name="resizable">both</property>
+    <property name="takefocus">true</property>
+    <property name="title" translatable="yes">EFT Generator</property>
+    <property name="width">960</property>
+    <containerlayout manager="grid">
+      <property name="anchor">nw</property>
+      <property name="propagate">false</property>
+    </containerlayout>
+    <child>
+      <object class="ttk.Panedwindow" id="panedwindow3">
+        <property name="height">720</property>
+        <property name="orient">horizontal</property>
+        <property name="width">1280</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+          <property name="sticky">nw</property>
+        </layout>
+        <child>
+          <object class="ttk.Panedwindow.Pane" id="pane3">
+            <property name="weight">1</property>
+            <child>
+              <object class="ttk.Panedwindow" id="panedwindow2">
+                <property name="height">540</property>
+                <property name="orient">horizontal</property>
+                <property name="width">480</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+                <child>
+                  <object class="ttk.Panedwindow.Pane" id="pane1">
+                    <property name="weight">1</property>
+                    <child>
+                      <object class="ttk.Labelframe" id="sectionOne" named="True">
+                        <property name="height">200</property>
+                        <property name="text" translatable="yes">Section 1</property>
+                        <property name="width">200</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="columnspan">2</property>
+                          <property name="row">0</property>
+                          <property name="rowspan">15</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                        <containerlayout manager="grid">
+                          <property name="anchor">nw</property>
+                        </containerlayout>
+                        <child>
+                          <object class="ttk.Label" id="label1">
+                            <property name="text" translatable="yes">1.02 (VER) </property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="ver" named="True">
+                            <property name="justify">left</property>
+                            <property name="text" translatable="yes">0400</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label2">
+                            <property name="text" translatable="yes">1.03:a (FRC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">1</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label3">
+                            <property name="text" translatable="yes">1.03:b (CRC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">2</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label4">
+                            <property name="text" translatable="yes">1.03:a (REC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">3</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label5">
+                            <property name="text" translatable="yes">1.03:b (IDC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">4</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label6">
+                            <property name="text" translatable="yes">1.04 (TOT)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">5</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label7">
+                            <property name="text" translatable="yes">1.05 (DAT)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">6</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label8">
+                            <property name="text" translatable="yes">1.06 (PRY)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">7</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label9">
+                            <property name="text" translatable="yes">1.07 (DAI)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">8</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label10">
+                            <property name="text" translatable="yes">1.08 (ORI)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">9</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label11">
+                            <property name="text" translatable="yes">1.09 (TCN)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">10</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label12">
+                            <property name="text" translatable="yes">1.11 (NSR)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">11</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label13">
+                            <property name="text" translatable="yes">1.12 (NTR)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">12</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="frc" named="True">
+                            <property name="text" translatable="yes">1</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">1</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="crc" named="True">
+                            <property name="text" translatable="yes">15</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">2</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="rec" named="True">
+                            <property name="text" translatable="yes">2</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">3</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="idc1" named="True">
+                            <property name="text" translatable="yes">00</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">4</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="tot" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">5</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="dat" named="True">
+                            <property name="text" translatable="yes">yyyy/mm/dd</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">6</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="pry" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">7</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="dai" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">8</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="ori" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">9</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="tcn" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">10</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="nsr" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">11</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="ntr" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">12</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Button" id="sectionOneUpdaterButton" named="True">
+                            <property name="command" type="command" cbtype="simple">section_one_updater</property>
+                            <property name="text" translatable="yes">Save Changes</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="padx">5</property>
+                              <property name="pady">10</property>
+                              <property name="row">13</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Panedwindow.Pane" id="pane2">
+                    <property name="weight">1</property>
+                    <child>
+                      <object class="ttk.Labelframe" id="sectionTwo" named="True">
+                        <property name="height">200</property>
+                        <property name="text" translatable="yes">Section 2</property>
+                        <property name="width">200</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="columnspan">2</property>
+                          <property name="row">0</property>
+                          <property name="rowspan">15</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                        <containerlayout manager="grid">
+                          <property name="propagate">false</property>
+                        </containerlayout>
+                        <child>
+                          <object class="ttk.Label" id="label16">
+                            <property name="text" translatable="yes">2.002 (IDC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="idc2" named="True">
+                            <property name="text" translatable="yes">0400</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label30">
+                            <property name="text" translatable="yes">2.005 (RET)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">1</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label31">
+                            <property name="text" translatable="yes">2.016 (SOC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">2</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label32">
+                            <property name="text" translatable="yes">2.018 (NAM)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">3</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label33">
+                            <property name="text" translatable="yes">2.020 (POB)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">4</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label34">
+                            <property name="text" translatable="yes">2.021 (CTZ)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">5</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label35">
+                            <property name="text" translatable="yes">2.022 (DOB)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">6</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label36">
+                            <property name="text" translatable="yes">2.024 (SEX)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">7</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label37">
+                            <property name="text" translatable="yes">2.025 (RAC)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">8</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label38">
+                            <property name="text" translatable="yes">2.027 (HGT)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">9</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label39">
+                            <property name="text" translatable="yes">2.029 (WGT)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">10</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label40">
+                            <property name="text" translatable="yes">2.031 (EYE)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">11</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label41">
+                            <property name="text" translatable="yes">2.032 (HAI)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">12</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label42">
+                            <property name="text" translatable="yes">2.037 (RFP)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">13</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="ret" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">1</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="soc" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">2</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="nam" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">3</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="pob" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">4</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="ctz" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">5</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="dob" named="True">
+                            <property name="text" translatable="yes">yyyy/mm/dd</property>
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">6</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="sex" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">7</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="rac" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">8</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="hgt" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">9</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="wgt" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">10</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="eye" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">11</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="hair" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">12</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="rfp" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">13</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label43">
+                            <property name="text" translatable="yes">2.038 (DPR)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">14</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label44">
+                            <property name="text" translatable="yes">2.041 (RES)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">15</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label45">
+                            <property name="text" translatable="yes">2.067:a (MAK)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">16</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label46">
+                            <property name="text" translatable="yes">2.067:b (MODL)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">17</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label47">
+                            <property name="text" translatable="yes">2.067:c (SERNO)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">18</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="label48">
+                            <property name="text" translatable="yes">2.073 (CRI)</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">19</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="dpr" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">14</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="res" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">15</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="mak" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">16</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="modl" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">17</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="serno" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">18</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="cri" named="True">
+                            <layout manager="grid">
+                              <property name="column">1</property>
+                              <property name="row">19</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Panedwindow.Pane" id="pane4">
+            <property name="weight">1</property>
+            <child>
+              <object class="ttk.Frame" id="frame1">
+                <property name="height">540</property>
+                <property name="width">480</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+                <containerlayout manager="grid">
+                  <property name="anchor">n</property>
+                  <property name="propagate">false</property>
+                </containerlayout>
+                <child>
+                  <object class="ttk.Notebook" id="notebook2">
+                    <property name="height">680</property>
+                    <property name="width">620</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Notebook.Tab" id="tab1">
+                        <property name="text" translatable="yes">Right</property>
+                        <child>
+                          <object class="ttk.Frame" id="frame2">
+                            <property name="height">200</property>
+                            <property name="width">200</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">0</property>
+                            </layout>
+                            <containerlayout manager="grid">
+                              <property name="anchor">nw</property>
+                              <property name="propagate">false</property>
+                            </containerlayout>
+                            <child>
+                              <object class="ttk.Labelframe" id="plainRightThumb" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Plain Right Thumb</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="row">0</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button10">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label58">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox11">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightMiddle" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Right Middle</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button21">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label69">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox22">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightThumb" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Right Thumb</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">1</property>
+                                  <property name="row">0</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button23">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label71">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox24">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightIndex" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Right Index</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">2</property>
+                                  <property name="row">0</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button25">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label73">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox26">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightRing" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Right Ring</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">1</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button29">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label77">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox30">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightLittle" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Right Little</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">2</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button31">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label79">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox32">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="rightFour" named="True">
+                                <property name="height">280</property>
+                                <property name="text" translatable="yes">Plain Right Four Fingers</property>
+                                <property name="width">620</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="columnspan">3</property>
+                                  <property name="row">2</property>
+                                  <property name="sticky">s</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button32">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label80">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">0</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox33">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Notebook.Tab" id="tab2">
+                        <property name="text" translatable="yes">Left</property>
+                        <child>
+                          <object class="ttk.Frame" id="frame3">
+                            <property name="height">200</property>
+                            <property name="width">200</property>
+                            <layout manager="grid">
+                              <property name="column">0</property>
+                              <property name="row">0</property>
+                            </layout>
+                            <containerlayout manager="grid">
+                              <property name="anchor">nw</property>
+                              <property name="propagate">false</property>
+                            </containerlayout>
+                            <child>
+                              <object class="ttk.Labelframe" id="plainLeftThumb" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Plain Left Thumb</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="row">0</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button33">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label81">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox34">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftMiddle" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Left Middle</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button34">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label82">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox35">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftThumb" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Left Thumb</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">1</property>
+                                  <property name="row">0</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button35">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label83">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox36">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftIndex" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Left Index</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">2</property>
+                                  <property name="row">0</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button36">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label84">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox37">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftRing" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Left Ring</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">1</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button37">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label85">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox38">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftLittle" named="True">
+                                <property name="height">200</property>
+                                <property name="text" translatable="yes">Left Little</property>
+                                <property name="width">200</property>
+                                <layout manager="grid">
+                                  <property name="column">2</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">nw</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button38">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                      <property name="sticky">e</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label86">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="columnspan">4</property>
+                                      <property name="padx">5</property>
+                                      <property name="pady">5</property>
+                                      <property name="row">0</property>
+                                      <property name="rowspan">4</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox39">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Labelframe" id="leftFour" named="True">
+                                <property name="height">280</property>
+                                <property name="text" translatable="yes">Plain Left Four Fingers</property>
+                                <property name="width">620</property>
+                                <layout manager="grid">
+                                  <property name="column">0</property>
+                                  <property name="columnspan">3</property>
+                                  <property name="row">2</property>
+                                  <property name="sticky">s</property>
+                                </layout>
+                                <containerlayout manager="grid">
+                                  <property name="anchor">s</property>
+                                  <property name="propagate">false</property>
+                                </containerlayout>
+                                <child>
+                                  <object class="ttk.Button" id="button39">
+                                    <property name="text" translatable="yes">Load New</property>
+                                    <layout manager="grid">
+                                      <property name="column">5</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Label" id="label87">
+                                    <property name="text" translatable="yes">No Image Available!</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">0</property>
+                                      <property name="sticky">nw</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="ttk.Combobox" id="combobox40">
+                                    <property name="values">Scannable Amputated Bandaged/Other</property>
+                                    <layout manager="grid">
+                                      <property name="column">0</property>
+                                      <property name="row">5</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

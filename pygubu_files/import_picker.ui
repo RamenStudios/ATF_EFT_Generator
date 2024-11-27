@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">540</property>
+        <property name="width">960</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="ipadx">3</property>
+          <property name="ipady">3</property>
+          <property name="row">0</property>
+          <property name="sticky">nw</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property name="anchor">center</property>
+          <property name="propagate">false</property>
+        </containerlayout>
+        <child>
+          <object class="ttk.Frame" id="frame2">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label2">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox2">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame10">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label5">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox4">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame11">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label6">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox5">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame12">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label7">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox6">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame13">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">4</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label8">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox7">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame14">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label9">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox8">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame15">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">6</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">0</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label10">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox9">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame16">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label11">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox10">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame17">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label12">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox11">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame18">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label13">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox12">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame19">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label14">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox13">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame20">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">4</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label15">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox14">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame21">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">5</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label16">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox15">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame22">
+            <property name="height">130</property>
+            <property name="relief">sunken</property>
+            <property name="width">130</property>
+            <layout manager="grid">
+              <property name="column">6</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">1</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label17">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox16">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame23">
+            <property name="height">250</property>
+            <property name="relief">sunken</property>
+            <property name="width">400</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">3</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">2</property>
+              <property name="rowspan">3</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label18">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox17">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame25">
+            <property name="height">250</property>
+            <property name="relief">sunken</property>
+            <property name="width">400</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="columnspan">3</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="row">2</property>
+              <property name="rowspan">3</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+              <property name="propagate">false</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="label19">
+                <property name="text" translatable="yes">No image found!</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox18">
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button1">
+            <property name="text" translatable="yes">Finish Import</property>
+            <layout manager="grid">
+              <property name="column">6</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button2">
+            <property name="text" translatable="yes">Cancel Import</property>
+            <layout manager="grid">
+              <property name="column">6</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
